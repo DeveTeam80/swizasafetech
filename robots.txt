@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: https://www.swizasafetech.in/sitemap.xml
+Disallow: /brocher/Swiza\Brochure.pdf/
+Disallow: /https://widget-v4.tidiochat.com/1_293_0/static/js/render.1294bd3fde391a250c25.js

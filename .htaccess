@@ -1,0 +1,12 @@
+#redirects https
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.swizasafetech.in/$1 [R=301,L] 
+RewriteCond %{http_host} ^swizasafetech.in [NC]
+RewriteRule ^(.*)$ https://www.swizasafetech.in/$1 [R=301,L]  
+#user friendly urls
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.html -f 
+RewriteRule ^(.*)$ $1.html
+
+ErrorDocument 404 /404.html

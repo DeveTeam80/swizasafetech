@@ -1,0 +1,1 @@
+$(function(){var n=$("#clientlogo"),e=n.children().length;n.css("width",220*e);var i=!0;setInterval(function n(){if(!1!=i){var e=$("#clientlogo li:first");e.animate({"margin-left":"-220px"},900,function(){e.remove().css({"margin-left":"0px"}),$("#clientlogo li:last").after(e)})}},1600),$(document).on({mouseenter:function(){i=!1},mouseleave:function(){i=!0}},"#ourclientsm")});
